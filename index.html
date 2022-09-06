@@ -20,7 +20,7 @@
     <form id="settings-form">
       <div>
         <label for="difficulty">Difficulty</label>
-        <select id="sifficulty">
+        <select id="difficulty">
           <option value="easy">Easy</option>
           <option value="medium">Medium</option>
           <option value="hard">Hard</option>
@@ -33,7 +33,7 @@
     <h2>👩‍💻 Speed Typer 👨‍💻</h2>
     <small>Type the following:</small>
 
-    <h1 id="word">TEST</h1>
+    <h1 id="word"></h1>
 
     <input type="text" id="text" autocomplete="off" placeholder="Type the word here...">
 
@@ -45,7 +45,23 @@
       Score: <span id="score">0</span>
     </p>
 
-    <div id="end-game-container" class="end-game-cpntainer"></div>
+
+    <div id="rules-container" class="rules-container">
+      <h2>👩‍💻 Speed Typer 👨‍💻</h2>
+      <ul>
+        <li>Easy -> + 5 second for each Hit! </li>
+        <li>Medium -> + 3 second for each Hit! </li>
+        <li>Hard -> + 1 second for each Hit! </li>
+
+      </ul>
+      <h3>Let´s see how fast you can type</h3>
+      <button id="start-button">Start</button>
+    </div>
+    <div id="end-game-container" class="end-game-container">
+      <h1>Time run out</h1>
+      <p id="print-score"></p>
+      <button id="reload-button">Reload</button>
+    </div>
   </div>
 
 </body>

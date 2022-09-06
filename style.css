@@ -68,6 +68,7 @@ button:focus {
   position: relative;
   text-align: center;
   width: 500px;
+  height: 250px;
   margin: 100px 0;
 }
 
@@ -101,6 +102,30 @@ input {
   position: absolute;
   inset-block-start: 60px;
   inset-inline-start: 20px;
+}
+
+.rules-container {
+  padding: 20px;
+  background-color: inherit;
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.rules-container ul {
+  text-align: left;
+  font-size: 0.8em;
+}
+
+.rules-container h2 {
+  margin: 0;
+  width: 100%;
+}
+.rules-container h3 {
+  margin: 0 0 10px 0;
 }
 
 .end-game-container {
